@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Харитонова](https://up.htmlacademy.ru/htmlcss/30/user/1665819).
-* Наставник: `Неизвестно`.
+* Наставник: `[Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya)`.
 
 ---
 

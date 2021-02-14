@@ -1,0 +1,129 @@
+
+
+:root {
+
+
+  --basic-brow-default: #766357;
+  --basic-brow-active: #503E33;
+  --basic-pale-brow: #6A6A6A;
+  --basic-brow-button: #503E33;
+  --basic-blue: #81B3D2;
+  --basic-blue-button: #669EC0;
+  --basic-blue-active: #5496BD;
+  --basic-dark-brow: #333333;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-grey: #EEEEEE;
+  --basic-ligth-grey: #A9A9A9;
+  --basic-ultra-light-grey: #CACACA;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-dark-brow);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+  }
+
+
+
+.main-navigation {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-header-title {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.main-title {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.main-text-content {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.caption {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;;
+}
+
+.main-navigation a {
+  color: var(--basic-black)
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-ultra-light-grey);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.benefits {
+  background-color: var(--basic-blue);
+}
+
+
+.footer-social {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-item {
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+}

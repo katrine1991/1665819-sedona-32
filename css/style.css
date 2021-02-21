@@ -1,8 +1,15 @@
 
+ @font-face{
+  font-family: "PTSans";
+  src: url(../fonts/PTSans-Bold.woff) format("woff"),
+  url(../fonts/PTSans-Bold.woff2) format("woff2");
+  font-weight: normal;
+  font-style: bold;
+ }
+
 
 :root {
-
-
+  --basic-white: #ffffff;
   --basic-brow-default: #766357;
   --basic-brow-active: #503E33;
   --basic-pale-brow: #6A6A6A;
@@ -12,7 +19,6 @@
   --basic-blue-active: #5496BD;
   --basic-dark-brow: #333333;
   --basic-black: #000000;
-  --basic-white: #ffffff;
   --basic-grey: #EEEEEE;
   --basic-ligth-grey: #A9A9A9;
   --basic-ultra-light-grey: #CACACA;
@@ -20,6 +26,7 @@
 
   body {
     max-width: 1200px;
+    height: 70px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -30,7 +37,6 @@
     text-transform: uppercase;
     background-color: var(--basic-white);
   }
-
 
 
 .main-navigation {

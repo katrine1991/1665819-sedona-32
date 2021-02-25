@@ -1,89 +1,114 @@
-
- @font-face{
+@font-face {
   font-family: "PTSans";
   src: url(../fonts/PTSans-Bold.woff) format("woff"),
-  url(../fonts/PTSans-Bold.woff2) format("woff2");
+    url(../fonts/PTSans-Bold.woff2) format("woff2");
   font-weight: normal;
   font-style: bold;
- }
-
-
+}
+/**/
 :root {
   --basic-white: #ffffff;
-  --basic-brow-default: #766357;
-  --basic-brow-active: #503E33;
-  --basic-pale-brow: #6A6A6A;
-  --basic-brow-button: #503E33;
-  --basic-blue: #81B3D2;
-  --basic-blue-button: #669EC0;
-  --basic-blue-active: #5496BD;
-  --basic-dark-brow: #333333;
+  --basic-pale-brow: #6a6a6a;
+  --basic-dark-brown: #333333;
   --basic-black: #000000;
-  --basic-grey: #EEEEEE;
-  --basic-ligth-grey: #A9A9A9;
-  --basic-ultra-light-grey: #CACACA;
-  }
+  --basic-grey: #eeeeee;
+  --basic-ligth-grey: #a9a9a9;
+  --basic-ultra-light-grey: #cacaca;
+  --basic-black-light: #231f20;
+  --medium-steel-grey: #666666;
+  /*покой*/
+  --basic-blue: #81b3d2;
 
-  body {
-    max-width: 1200px;
-    height: 70px;
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: var(--basic-dark-brow);
-    text-transform: uppercase;
-    background-color: var(--basic-white);
-  }
+  /*наведение*/
+  --basic-blue-button: #669ec0;
 
+  /*нажатие-текст*/
+  --basic-transparent-black: #bdbbbc;
+  /*фон*/
+  --basic-blue-active: #5496bd;
 
-.main-navigation {
-  font-family: PT Sans, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
+  /*выбранный,забронировать,поиск гостиницы*/
+  --basic-brown-default: #766357;
+  --basic-brown-button: #604e43;
+  --basic-brown-active: #503e33;
+
+  /*дата заезда*/
+  --basic-silver-gray: #f2f2f2;
+  --basic-metalic-gray: #ebebeb;
 }
 
-.main-header-title {
-  font-family: PT Sans, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  text-transform: uppercase;
-}
-.main-title {
-  font-family: PT Sans, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-.main-text-content {
-  font-family: PT Sans, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+body {
+  max-width: 1200px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark-brown);
   text-transform: uppercase;
-  color: #333333;
+  background-color: var(--basic-white);
 }
 
-.caption {
-  font-family: PT Sans, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 24px;;
+.site-link {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.title-hidden {
+  display: none;
+}
+
+.title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.text-reason {
+  line-height: 26px;
+}
+
+.text-interest {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.subtitle-white {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.text-white {
+  color: var(--basic-white);
+}
+
+.block-blue {
+  background-color: var(--basic-blue);
+}
+
+.block-grey {
+  background-color: var(--basic-grey);
 }
 
 .main-navigation a {
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 
 .main-navigation a {
@@ -94,12 +119,22 @@
   list-style: none;
 }
 
-.site-navigation a:hover {
+.site-link a:link,
+.site-link a:visited {
+  color: var(--basic-black);
+}
+
+.site-link a:hover {
   color: var(--basic-blue);
 }
 
-.site-navigation a:focus {
-  color: var(--basic-ultra-light-grey);
+.site-link a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation .selected-link {
+  color: var(--basic-brown-default);
 }
 
 .features-list {
@@ -114,22 +149,111 @@
   background-color: var(--basic-blue);
 }
 
-
-.footer-social {
-  font-family: PT Sans, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .footer-social-list {
   list-style: none;
 }
 
-.footer-social-item {
-  width: 46px;
-  height: 48px;
+.copyright-logo:link {
+  fill: var(--basic-black-light);
+}
+
+.copyright-logo:hover {
+  fill: var(--basic-blue);
+}
+
+.copyright-logo:active {
+  fill: var(--basic-transparent-black);
+}
+
+.catalog-heading .heading-link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.catalog-heading .heading-link:hover {
+  color: var(--basic-blue);
+}
+
+.catalog-heading .heading-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Подробнее */
+
+.link-more {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
   background-color: var(--basic-blue);
 }
+
+.link-more:hover {
+  background-color: var(--basic-blue-button);
+}
+
+.link-more:active {
+  background-color: var(--basic-blue-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Забронировать */
+
+.button {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-default);
+}
+
+.button:hover {
+  background-color: var(--basic-brown-button);
+}
+
+.button:active {
+  background-color: var(--basic-brown-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* icon-up-dir.icon-down-dir */
+
+.icon-up:link {
+  fill: var(--basic-ultra-light-grey);
+}
+
+.icon-up:hover {
+  fill: var(--basic-black);
+}
+
+.icon-up:active {
+  fill: var(--basic-blue-active);
+}
+
+.sort-link {
+  color:rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed var(--basic-blue);
+   text-decoration: none;
+
+ }
+
+ .sort-link:hover {
+  color: var(--basic-blue);
+  border-bottom: 1px dashed var(--basic-blue);
+ }
+
+ .sort-link:active {
+   color: var(--basic-black);
+   border: none
+
+ }
+
+ .sort-selected .selected-sort {
+   color: var(--basic-blue);;
+ }

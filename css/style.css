@@ -47,7 +47,6 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: var(--basic-dark-brown);
-  text-transform: uppercase;
   background-color: var(--basic-white);
 }
 
@@ -56,7 +55,7 @@ body {
   font-weight: 700;
 }
 
-.title-hidden {
+.visually-hidden {
   display: none;
 }
 

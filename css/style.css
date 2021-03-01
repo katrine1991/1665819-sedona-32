@@ -249,7 +249,7 @@ body {
 
  .sort-link:active {
    color: var(--basic-black);
-   border: none
+   border: none;
 
  }
 

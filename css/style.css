@@ -253,6 +253,6 @@ body {
 
  }
 
- .sort-selected .selected-sort {
-   color: var(--basic-blue);;
+ .sort-selected, .selected-sort {
+   color: var(--basic-blue);
  }
